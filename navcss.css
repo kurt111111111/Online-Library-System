@@ -1,0 +1,259 @@
+body.parent {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer {
+    order: 1;
+}
+
+.content {
+    order: 2;
+}
+
+.nav {
+    order: 3;
+}
+
+.navlistH {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    background-color: #074124;
+    text-align: center;
+}
+
+.navlistH li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navlistH li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.navlistH li a:hover {
+    background-color:#074124;
+}
+
+/* content area */
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.leftcontent {
+    width: 180px;
+    background-color: #dce6f0;
+    padding: 15px;
+}
+
+.navlistV {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navlistV li {
+    margin-bottom: 12px;
+}
+
+.navlistV li a {
+    text-decoration: none;
+    color: #08834f;
+    font-weight: bold;
+    padding: 6px 10px;
+    display: block;
+    border-left: 3px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.navlistV li a:hover {
+    border-left: 3px solid #074124;
+    background-color: #cddced;
+    color: #28f384;
+}
+
+.navlistV li a.active {
+    border-left: 3px solid #074124;
+    background-color: #cddced;
+    color: #16cf69;
+}
+
+.rightcontent {
+    padding: 20px;
+}
+
+.rightcontent pre {
+    max-height: 250px;
+    overflow-y: auto;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.rightcontent h1 {
+    color: #074124;
+    border-bottom: 3px solid #0ca080;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.rightcontent img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    border: 3px solid #074124;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* favorites */
+.favoritesList {
+    margin-top: 15px;
+}
+
+
+.songphoto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3be9bd;
+    flex-shrink: 0;
+}
+
+.moviephoto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid#3be9bd;
+    flex-shrink: 0;
+}
+
+.foodphoto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3be9bd;
+    flex-shrink: 0;
+}
+
+.placephoto {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3be9bd;
+    flex-shrink: 0;
+}
+
+.museum img {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.50s ease, box-shadow 0.50s ease;
+}
+
+.sports {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px;
+    transition: transform 0.50s ease, box-shadow 0.50s ease;
+}
+
+.anyonesong{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3be9bd;
+    flex-shrink: 0;
+}
+
+.enchantedsong{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3be9bd;
+    flex-shrink: 0;
+}
+
+.xxlsong{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #3be9bd;
+    flex-shrink: 0;
+}
+
+
+.favoriteItem {
+    display: inline-block;
+    vertical-align: top;
+    width: 240px; 
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #000000;
+    border-left: 4px solid #3be9bd;
+    padding: 10px 14px;
+    margin: 0 10px 10px 0; 
+    transition: transform 0.50s ease, box-shadow 0.50s ease;
+}
+
+.favoriteItem:hover {
+    transform: translateX(4px);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.favoriteItem h3 {
+    margin: 0 0 5px 0;
+    color:#3be9bd;
+}
+
+.favoriteItem p {
+    margin: 0;
+    color:#3be9bd;
+}
+
+/* footer */
+.footer {
+    font-size: 10px;
+    text-align: center;
+    background-color: #074124;
+    color: #eee;
+    padding: 1px;
+}
